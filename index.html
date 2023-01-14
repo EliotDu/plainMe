@@ -59,8 +59,7 @@
         }
         .toggleline{
             width: 50%;
-            border-bottom: 4px solid #000;
-          
+            border-bottom: 4px solid #000;   
         }
         .searchbar{
             flex-grow: 1;
@@ -77,19 +76,25 @@
             text-decoration: none;
         }
         .more a:hover{
-            color: #000;
+            color:#fff;
             text-decoration: underline;
         }
         .moreBtn{
-            width: 300px;
+            width: 240px;
             border: 2px solid #777777;
-            
             border-radius: 5px;
             padding: 8px;
+        }
+        .moreBtn:hover{
+            color:#fff;
+            background-color: #666;
         }
         .moreBtn a{
             text-decoration: none;
             color:#777777;
+        }
+        .moreBtn a:hover{
+            color:#fff;
         }
         .img-outline{
             width: 100%;
@@ -100,10 +105,45 @@
             width: 100%;
             
         }
-       
+        .multiple-items{
+            position: relative;
+        }
+        .multiple-items p{
+            margin: 0;
+            font-size: 10px;
+            letter-spacing: 1;
+            padding: 2px 0;
+           
+        }
+        .slick-prev{
+            width:22px;
+            /* background-color:#f2f2f3; */
+            border-radius: 50%;
+            text-transform: none;
+            position:absolute; 
+            top:30% ;
+            right:-5px;
+            z-index: 100;
+            opacity: 0.3;
+        }
+        .slick-next{
+            width:22px;
+            text-transform: none;
+            position:absolute; 
+            top:30% ;
+            left:-5px;
+            z-index: 100;
+            opacity: 0.3;
+            /* background-color:#f2f2f3; */
+        }
+        .slick-next:hover{
+            background-color: #fff;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
+  
     <header>
         <div class="navbar container-fluid d-flex flex-nowrap">
                 <a href="" >
@@ -312,42 +352,126 @@
             </div>    
         </div>
         <div class="w-100 p-0" style="background-color: #f2f2f3;height: 20px;"></div>
-        <div class="d-flex justify-content-between align-items-center my-4 ">
+        <div class="d-flex  align-items-center my-4 ">
             <div>
                 <h5 class="m-0 classicTitle">暢銷熱榜</h5>
             </div>
         </div>
-      <div class="my multiple-items">
-       
-        <div >
-           <img src="./imgs/image1.webp" alt="">
-        </div>
-        <div  >
-           <img src="./imgs/image1.webp" alt="">
-        </div>
-        <div >
-           <img src="./imgs/image1.webp" alt="">
-        </div>
-        <div >
-           <img src="./imgs/image1.webp" alt="">
-        </div>
-        <div  >
-           <img src="./imgs/image1.webp" alt="">
-        </div>
-       
-     
-        
-        
-        
+      <div class=" multiple-items responsive ">
+            <div >
+                <div class="p-2">
+                <img src="./imgs/slickImg1.jpg" alt="">
+                    <p>經典丹寧外套</p>
+                    <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 3580</p>
+                    <p style="color:#c30d23 ">特  價 NT$ 2998</p>
+                    <p style="color:#c30d23;"> [16%Off]</p>
+              </div>
+            </div>
+            <div  >
+                <div class="p-2">
+                <img src="./imgs/slickImg2.webp" alt="">
+                    <p>福兔刺繡鬆身衛衣</p>
+                    <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 2280</p>
+                    <p style="color:#c30d23">會員價 NT$ 2166</p>
+                    <p style="color:#c30d23;"> [5%Off]</p>
+                </div>
+            </div>
+            <div >
+                <div class="p-2">
+                <img src="./imgs/slickImg3.webp" alt="">
+              
+                    <p>P-LOGO 鬆身衛衣</p>
+                    <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 2280</p>
+                    <p style="color:#C30D23">會員價 NT$ 2166 </p>
+                    <p style="color:#c30d23;" > [5%Off]</p>
+                </div>
+            </div>
+            <div >
+                <div class="p-2">
+                <img src="./imgs/slickImg4.webp" alt="">
+                    <p>J4544運動外套</p>
+                    <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 6680</p>
+                    <p style="color:#c30d23">特  價 NT$ 4676 </p>
+                    <p style="color:#c30d23;">[30%Off]</p>
+                 </div>
+            </div>
+            <div >
+                <div class="p-2">
+                <img src="./imgs/slickImg5.webp" alt="">
+                    <p>防潑水立領鋪棉外套</p>
+                    <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 4980</p>
+                    <p style="color:#c30d23">特  價 NT$ 2998</p>
+                    <p style="color:#c30d23;">[40%Off]</p>
+                 </div>
+            </div>
+            <div >
+                <div class="p-2">
+                <img src="./imgs/slickImg6.webp" alt="">
+                    <p>薄鋪棉教練外套</p>
+                    <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 2680</p>
+                    <p style="color:#c30d23">特  價 NT$ 2144 </p>
+                    <p style="color:#c30d23;">[20%Off]</p>
+                 </div>
+            </div>
       </div>
-
+      <div class="w-100 p-0 mt-4 mb-4" style="background-color: #f2f2f3;height: 20px;"></div>
+      <div id="myslide" > 
+            <div>
+                <div class="p-1"><img src="./imgs/slickAutoImg1.jpg" alt=""></div>
+            </div>
+            <div>
+                <div class="p-1"><img src="./imgs/slickAutoImg2.webp" alt=""></div>
+            </div>
+            <div>
+                <div class="p-1"><img src="./imgs/slickAutoImg3.webp" alt=""></div>
+            </div>
+            <div>
+                <div class="p-1"><img src="./imgs/slickAutoImg1.jpg" alt=""></div>
+            </div>
+            <div>
+                <div class="p-1"><img src="./imgs/slickAutoImg2.webp" alt=""></div>
+            </div>
+            <div>
+                <div class="p-1"><img src="./imgs/slickAutoImg3.webp" alt=""></div>
+            </div>
+      </div>
+      <div style="text-align:center" class="p-2">
+        <span class="p-2">mini matters x plain-me 首度聯名 - 「原宿寶貝」！</span>
+        <h4 class="p-2">mini matters x plain-me 首度聯名 - 「原宿寶貝」！</h4>
+        <div class="d-flex text-center justify-content-center m-auto  mb-4 mt-4 pb-4">
+            <div class="moreBtn">
+                <a href="">看更多</a>
+            </div>    
+        </div>
+      </div>
 <script>
         $('.multiple-items').slick({
             infinite: true,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            arrows:true,
+            prevArrow:'<div class="slick-prev"><img src="./imgs/arrow-right-circle.svg"/></div>',
+            nextArrow:'<div class="slick-next"><img src="./imgs/arrow-left-circle.svg"/></div>',
+            responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows:true,
+                prevArrow:'<div class="slick-prev"><img src="./imgs/arrow-right-circle.svg"/></div>',
+            nextArrow:'<div class="slick-next"><img src="./imgs/arrow-left-circle.svg"/></div>',
+            }
+        },]
+        })
+
+        $('#myslide').slick({
+            arrows:false,
             slidesToShow: 3,
             slidesToScroll: 1,
-            arrows:false
-        });
+            autoplay: true,
+            autoplaySpeed: 2000,
+        })
         
 </script>
 
