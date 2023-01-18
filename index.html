@@ -21,6 +21,13 @@
             overflow: auto;
             background-color: #f2f2f3;
         }
+        h5{
+            font-size: 16px;
+            margin:0;
+        }
+        p{
+            margin: 0;
+        }
         header{
             height:108px   ;
         }
@@ -28,17 +35,72 @@
             padding:10px ;
             color:#FFF;
             width: 100%;
-            /* height:40px; */
+           
             background-color:#c5bdae;
             display: flex;
             justify-content:center;
             align-content: center;
+            /* position: fixed; */
+            /* top: 0;    */
+            /* z-index: 10; */
+        }
+        .desktopNavbar{
+            /* position: fixed; */
+            /* top:0; */
+            padding:0 20px ;
+            color:#FFF;
+            width: 100%;
+            background-color:#c5bdae;
+            display: flex;
+            height: 64px;
+            align-content: center;
+            /* z-index: 10; */
+            /* justify-content: space-between; */
+        }
+        .mobileNavbaHridden{
+            width: 100%;
+            position: fixed;
+            top:0
+        }
+        .desktopNavbarHidden{
+            width: 100%;
+            position: fixed;
+            top:0   
+        }
+        .manOutline{
+            
+            /* padding:20px 10px; */
+            background-color: #9B9388;
+            
+        }
+        .desktopNavbar div{
+            padding: 0 10px;
+        }
+        .desktopNavbar a {
+            padding:0   10px ;
+        }
+        .desktopNavbarLogo{
+            width: 120px;
+        }
+        .desktopInput{
+            flex-grow: 1;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+           
+        }
+        li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            justify-content: end;
         }
         header button{
             background-color: #fff;
             border:none;
             border-right: 1px solid #CCC;
-            height:100% ;
+            /* height:98% ; */
             padding: 5px 0;
             
         }
@@ -49,7 +111,7 @@
             background-color: #fff;
             border-radius:8px 0 0 8px;
         }
-        input {
+        .mobileInput {
             width: 100%;
             height:30px;
             padding-right:15px;
@@ -64,7 +126,7 @@
         .searchbar{
             flex-grow: 1;
         }
-        .baaner{
+        .banner{
             width: 100%;
             max-height:600px;
         }
@@ -103,7 +165,6 @@
         }
         img{
             width: 100%;
-            
         }
         .multiple-items{
             position: relative;
@@ -140,43 +201,194 @@
             background-color: #fff;
             border-radius: 50%;
         }
+        .plainmeWear{
+            width: 100%;
+            height: 100%;
+            padding: 0 15px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            letter-spacing: 2px;
+        }
+        .plainmeWear a{
+            text-decoration: none;
+            color:#111111;
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: 700;
+    }
+      
+        .wearicon{
+            padding-top: 10px;
+            width: 25px;
+            height: 25px;
+        }
+        .wearicon img{
+            width: 25px;
+        }
+        .wearDate a{
+            font-size: 12px;
+        }
+        footer{
+            width: 100% !important;
+            padding: 25px 0 50px;
+            /* min-height:400px; */
+            background: #000;
+            color:#FFF
+        }
+        .footerBtn{
+            margin: 40px 0;
+        }
+        .footerIcon{
+            display: inline-block;
+            justify-content: center;
+        }
+        .footerIcon img{
+            max-width:55px;
+            padding: 0 10px;
+        }
+        .footerLogo{
+            width: 200px;
+            padding-bottom: 40px;
+        }
+        .footerText p{
+            font-size: 14px;
+        }
+        .footerOutline{
+            padding: 0 10px ;
+        }
+        .footerTitle{
+            padding:0 10px ;
+            border-bottom:1px solid #fff;
+        }
+        .footerLock{
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .footerLink{
+            padding: 16px 0;
+            border-bottom: 1px solid #fff;
+        }
+        .footerLink a{
+            text-decoration: none;
+            color: #fff;
+            padding: 0 10px;
+        }
+        .footer-main{
+            padding: 30px 0 45px;
+        }
+        .desktopFooterBtn{
+            padding: 90px 0 130px ;
+            background-color: #282828;
+        }
+        .desktopFooterBtnOutline{
+            padding: 0 10px ;
+        }
+        .desktopFooter{
+            padding: 0 0 50px 0;
+        }
+
+        @media (max-width:992px) {
+            .desktopFooter{
+                display: none;
+            }
+            .desktopNavbarHidden{
+                display: none;
+            }
+        }
+        @media (min-width:992px) {
+            .mobileFooter{
+                display: none;
+            }
+            .mobileNavbaHridden{
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
-  
     <header>
-        <div class="navbar container-fluid d-flex flex-nowrap">
-                <a href="" >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFF"  class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                      </svg>
-                </a>      
-            <div class="logo p-2"><img src="./imgs/logo.webp" width="100px"  alt=""> </div>
-            <div class="searchbar d-flex px-4">
-                <div class="search ">
-                    <a href="" class="search" ><svg xmlns="http://www.w3.org/2000/svg" width="40" height="16" fill="#CCC" class="bi bi-search" viewBox="0 0 20 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                      </svg></a>
+        <div class="desktopNavbarHidden">
+        <div class="d-flex container-fluid desktopNavbar  align-items-center">
+                <div class="desktopNavbarLogo">
+                    <img src="./imgs/logo.webp" alt="">
                 </div>
-                <input type="text" placeholder="SEARCH" class="">
+                <div class="manOutline">
+                    <div class="man-Main">
+                        <h5>男裝首頁</h5>
+                    </div>
+                </div>
+                <div class="women-Main">
+                    <h5>女裝首頁</h5>
+                </div>
+                <div class="searchbar d-flex px-2">
+                    <div class="search ">
+                        <a href="" class="search" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="#CCC" class="bi bi-search" viewBox="0 0 20 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg></a>
+                    </div>
+                    <input type="text" placeholder="SEARCH" class="mobileInput">
+                </div>
+            <div >
+                <ul class="d-flex align-item-center">
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#FFF" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#FFF" class="bi bi-heart" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#FFF" class="bi bi-cart" viewBox="0 0 16 16" >
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
-          
-                <a href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFF" class="bi bi-person" viewBox="0 0 16 16">
-                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                  </svg>
+        </div>
+    </div>
+        <div class="mobileNavbaHridden">
+            <div class="mobileNavbar navbar container-fluid d-flex flex-nowrap">
+                    <a href="" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFF"  class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </a>      
+                <div class="logo p-2"><img src="./imgs/logo.webp" width="100px"  alt=""> </div>
+                <div class="searchbar d-flex px-4">
+                    <div class="search ">
+                        <a href="" class="search" ><svg xmlns="http://www.w3.org/2000/svg" width="40" height="16" fill="#CCC" class="bi bi-search" viewBox="0 0 20 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg></a>
+                    </div>
+                    <input type="text" placeholder="SEARCH" class="mobileInput">
+                </div>
+                    <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFF" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                    </svg>
                 </a>
                 <a href="" class="px-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="#FFF" class="bi bi-cart" viewBox="0 0 16 16" >
                         <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                      </svg>
+                    </svg>
                 </a>
         </div>
-        <div class="navbar-down d-flex flex-wrap pb-2">
-            <div class="w-50"><button class="w-100 mt-2">男裝首頁</button></div>
-            <div class="w-50"><button class="w-100 mt-2">女裝首頁</button></div>
-            <div class="toggleline mt-2"></div>
+        <div class="navbar-down d-flex flex-wrap pb-4">
+            <div class="w-50 "><button class="w-100 py-4">男裝首頁</button></div>
+            <div class="w-50"><button class="w-100 py-4">女裝首頁</button></div>
+            <div class="toggleline "></div>
         </div>
+    </div>
     </header>
     <div id="carouselExampleIndicators" class="carousel slide w-100 mt-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -247,7 +459,7 @@
                 <a href="">看更多</a>
             </div>    
         </div>
-    <!-- </div> -->
+   
     <div class="w-100 " style="background-color: #f2f2f3;height: 20px;"></div>
     <!-- <div class="classic  pt-3" style="background-color:#FFF"> -->
         <div class="d-flex justify-content-between align-items-center my-4 ">
@@ -357,63 +569,63 @@
                 <h5 class="m-0 classicTitle">暢銷熱榜</h5>
             </div>
         </div>
-      <div class=" multiple-items responsive ">
-            <div >
-                <div class="p-2">
-                <img src="./imgs/slickImg1.jpg" alt="">
-                    <p>經典丹寧外套</p>
-                    <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 3580</p>
-                    <p style="color:#c30d23 ">特  價 NT$ 2998</p>
-                    <p style="color:#c30d23;"> [16%Off]</p>
-              </div>
-            </div>
-            <div  >
-                <div class="p-2">
-                <img src="./imgs/slickImg2.webp" alt="">
-                    <p>福兔刺繡鬆身衛衣</p>
-                    <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 2280</p>
-                    <p style="color:#c30d23">會員價 NT$ 2166</p>
-                    <p style="color:#c30d23;"> [5%Off]</p>
+        <div class=" multiple-items responsive ">
+                <div >
+                    <div class="p-2">
+                    <img src="./imgs/slickImg1.jpg" alt="">
+                        <p>經典丹寧外套</p>
+                        <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 3580</p>
+                        <p style="color:#c30d23 ">特  價 NT$ 2998</p>
+                        <p style="color:#c30d23;"> [16%Off]</p>
                 </div>
-            </div>
-            <div >
-                <div class="p-2">
-                <img src="./imgs/slickImg3.webp" alt="">
-              
-                    <p>P-LOGO 鬆身衛衣</p>
-                    <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 2280</p>
-                    <p style="color:#C30D23">會員價 NT$ 2166 </p>
-                    <p style="color:#c30d23;" > [5%Off]</p>
                 </div>
-            </div>
-            <div >
-                <div class="p-2">
-                <img src="./imgs/slickImg4.webp" alt="">
-                    <p>J4544運動外套</p>
-                    <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 6680</p>
-                    <p style="color:#c30d23">特  價 NT$ 4676 </p>
-                    <p style="color:#c30d23;">[30%Off]</p>
-                 </div>
-            </div>
-            <div >
-                <div class="p-2">
-                <img src="./imgs/slickImg5.webp" alt="">
-                    <p>防潑水立領鋪棉外套</p>
-                    <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 4980</p>
-                    <p style="color:#c30d23">特  價 NT$ 2998</p>
-                    <p style="color:#c30d23;">[40%Off]</p>
-                 </div>
-            </div>
-            <div >
-                <div class="p-2">
-                <img src="./imgs/slickImg6.webp" alt="">
-                    <p>薄鋪棉教練外套</p>
-                    <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 2680</p>
-                    <p style="color:#c30d23">特  價 NT$ 2144 </p>
-                    <p style="color:#c30d23;">[20%Off]</p>
-                 </div>
-            </div>
-      </div>
+                <div  >
+                    <div class="p-2">
+                    <img src="./imgs/slickImg2.webp" alt="">
+                        <p>福兔刺繡鬆身衛衣</p>
+                        <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 2280</p>
+                        <p style="color:#c30d23">會員價 NT$ 2166</p>
+                        <p style="color:#c30d23;"> [5%Off]</p>
+                    </div>
+                </div>
+                <div >
+                    <div class="p-2">
+                    <img src="./imgs/slickImg3.webp" alt="">
+                
+                        <p>P-LOGO 鬆身衛衣</p>
+                        <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 2280</p>
+                        <p style="color:#C30D23">會員價 NT$ 2166 </p>
+                        <p style="color:#c30d23;" > [5%Off]</p>
+                    </div>
+                </div>
+                <div >
+                    <div class="p-2">
+                    <img src="./imgs/slickImg4.webp" alt="">
+                        <p>J4544運動外套</p>
+                        <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 6680</p>
+                        <p style="color:#c30d23">特  價 NT$ 4676 </p>
+                        <p style="color:#c30d23;">[30%Off]</p>
+                    </div>
+                </div>
+                <div >
+                    <div class="p-2">
+                    <img src="./imgs/slickImg5.webp" alt="">
+                        <p>防潑水立領鋪棉外套</p>
+                        <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 4980</p>
+                        <p style="color:#c30d23">特  價 NT$ 2998</p>
+                        <p style="color:#c30d23;">[40%Off]</p>
+                    </div>
+                </div>
+                <div >
+                    <div class="p-2">
+                    <img src="./imgs/slickImg6.webp" alt="">
+                        <p>薄鋪棉教練外套</p>
+                        <p style="text-decoration:line-through;color:#777777">建議售價 NT$ 2680</p>
+                        <p style="color:#c30d23">特  價 NT$ 2144 </p>
+                        <p style="color:#c30d23;">[20%Off]</p>
+                    </div>
+                </div>
+        </div>
       <div class="w-100 p-0 mt-4 mb-4" style="background-color: #f2f2f3;height: 20px;"></div>
       <div id="myslide" > 
             <div>
@@ -444,6 +656,390 @@
             </div>    
         </div>
       </div>
+      <div class="w-100 p-0 mt-4 mb-4" style="background-color: #f2f2f3;height: 20px;"></div>
+      <div class="d-flex align-items-center my-4 plainmeWear container-fluid">
+        <div>
+            <h5 class="my-4 classicTitle">plain-me 穿搭</h5>
+        </div>    
+        <div class="d-flex row row-cols-lg-5 ">
+               <div class="col-md-6 pb-4 "> 
+                    <div>
+                        <img src="./imgs/wear1.webp" alt="">
+                    </div>
+                    <div class="d-flex ">  
+                        <div class="wearicon">
+                            <img src="./imgs/weather-icon.webp" alt="" >
+                        </div>
+                        <div class="wearText p-2">
+                            <div>
+                                <a href="">「我不是個可以和別人一起分享可麗餅的人，我要的是整塊餅。」</a>
+                            </div>
+                           
+                            <div class="d-flex wearDate">
+                                <p class="pe-1"><a href="">23.01</a></p>
+                                <p><a href="">palinme_snap</a></p>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-6 pb-4">  
+                    <div>
+                        <img src="./imgs/wear2.jpg" alt="">
+                    </div>
+                    <div class="d-flex ">  
+                        <div class="wearicon">
+                            <img src="./imgs/weather-icon.webp" alt="" >
+                        </div>
+                        <div class="wearText p-2">
+                            <div>
+                                <p>
+                                    <a href="">神，也是人，只是他做了人做不到的事情，才成為神。</a>
+                                </p>
+                            </div>
+                            
+                            <div class="d-flex wearDate">
+                                <p class="pe-1"><a href="">23.01</a></p>
+                                <p><a href="">palinme_snap</a></p>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div> 
+               <div class="col-md-6 pb-4">  
+                    <div>
+                        <img src="./imgs/wear3.webp" alt="">
+                    </div>
+                    <div class="d-flex ">  
+                        <div class="wearicon">
+                            <img src="./imgs/weather-icon.webp" alt="">
+                        </div>
+                        <div class="wearText p-2">
+                            <div>
+                                <p>
+                                    <a href="">「小姐要不要幫忙？」「要。」「怎麼幫？」「走開。」</a>
+                                </p>
+                            </div>
+                            <div class="d-flex wearDate">
+                                <p class="pe-1"><a href="">23.01</a></p>
+                                <p><a href="">palinme_snap</a></p>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-6 pb-4">  
+                    <div>
+                        <img src="./imgs/wear4.webp" alt="">
+                    </div>
+                    <div class="d-flex ">
+                        <div class="wearicon">
+                            <img src="./imgs/weather-icon.webp" alt="">
+                        </div>
+                        <div class="wearText p-2">
+                            <div>
+                                <p>
+                                    <a href="">本來我要用這10塊錢念書，當個醫生、律師，但為了世界和平……唉</a>
+                                </p>
+                            </div>
+                            <div class="d-flex wearDate">
+                                <p class="pe-1"><a href="">23.01</a></p>
+                                <p><a href="">palinme_snap</a></p>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-6 pb-4">  
+                    <div>
+                        <img src="./imgs/wear5.webp" alt="">
+                    </div>
+                    <div class="d-flex ">  
+                        <div class="wearicon">
+                            <img src="./imgs/weather-icon.webp" alt="" >
+                        </div>
+                        <div class="wearText p-2">
+                            <div>
+                                <p>
+                                    <a href="">人稱「賭神」的高進，平時喜歡吃 Feodora 的苦味巧克力。</a>
+                                </p>
+                            </div>
+                            <div class="d-flex wearDate">
+                                <p class="pe-1"><a href="">23.01</a></p>
+                                <p><a href="">palinme_snap</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-6 pb-4">  
+                    <div>
+                        <img src="./imgs/wear6.webp" alt="">
+                    </div>
+                    <div class="d-flex ">  
+                        <div class="wearicon">
+                            <img src="./imgs/weather-icon.webp" alt="" >
+                        </div>
+                        <div class="wearText p-2">
+                            <div>
+                                <p>
+                                    <a href="">帥，只是一個字，卻跟了我一輩子...</a>
+                                </p>
+                            </div>
+                            <div class="d-flex wearDate">
+                                <p class="pe-1"><a href="">23.01</a></p>
+                                <p><a href="">palinme_snap</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-6 pb-4">  
+                    <div>
+                        <img src="./imgs/wear7.jpg" alt="">
+                    </div>
+                    <div class="d-flex ">  
+                        <div class="wearicon">
+                            <img src="./imgs/weather-icon.webp" alt="" >
+                        </div>
+                        <div class="wearText p-2">
+                            <div>
+                                <p>
+                                    <a href="">天氣好就是要出遊，這是肯定要a</a>
+                                </p>
+                            </div>
+                            <div class="d-flex wearDate">
+                                <p class="pe-1"><a href="">23.01</a></p>
+                                <p><a href="">palinme_snap</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-6 pb-4">  
+                    <div>
+                        <img src="./imgs/wear8.webp" alt="">
+                    </div>
+                    <div class="d-flex ">  
+                        <div class="wearicon">
+                            <img src="./imgs/weather-icon.webp" alt="" >
+                        </div>
+                        <div class="wearText p-2">
+                            <div>
+                                <p>
+                                    <a href="">自從我用了MINI頭盔包以後，頭腦就靈光了很多，每次考試都考一百分！</a>
+                                </p>
+                            </div>
+                            <div class="d-flex wearDate">
+                                <p class="pe-1"><a href="">22.12</a></p>
+                                <p><a href="">palinme_snap</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-6 pb-4">  
+                    <div>
+                        <img src="./imgs/wear9.jpg" alt="">
+                    </div>
+                    <div class="d-flex ">  
+                        <div class="wearicon">
+                            <img src="./imgs/weather-icon-1.webp" alt="" >
+                        </div>
+                        <div class="wearText p-2">
+                            <div>
+                                <p>
+                                    <a href="">終於要過年了 耶耶耶~~</a>
+                                </p>
+                            </div>
+                            <div class="d-flex wearDate">
+                                <p  class="pe-1"><a href="">22.12</a></p>
+                                <p><a href="">palinme_snap</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-6 pb-4">  
+                    <div>
+                        <img src="./imgs/wear10.jpg" alt="">
+                    </div>
+                    <div class="d-flex  ">
+                        <div class="wearicon">
+                            <img src="./imgs/weather-icon-1.webp" alt="" >
+                        </div>
+                        <div class="wearText p-2">
+                            <div>
+                                <p>
+                                    <a href="">冬天曬太陽好溫暖，頭髮變得金燦燦~~</a>
+                                </p>
+                            </div>
+                            <div class="d-flex wearDate">
+                                <p class="pe-1"><a  href="">22.12</a></p>
+                                <p><a href="">palinme_snap</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex text-center justify-content-center m-auto  mb-4 mt-4 pb-4">
+                <div class="moreBtn">
+                    <a href="">看更多</a>
+                </div>    
+            </div>
+      </div> 
+        <div class="w-100 p-0 mt-4 mb-4" style="background-color: #f2f2f3;height: 20px;"></div>
+        <div class=" align-items-center my-4  container-fluid ">
+            <div class="d-flex justify-content-between align-items-center my-4 ">
+                <div>
+                    <h5 class="m-0 classicTitle">新品上市</h5>
+                </div>
+                <div class="more">
+                    <a href="" style="font-size:14px">看更多 ></a>
+                </div>     
+            </div>
+            <div class="row row-cols-lg-5  row-cols-md-5 row-cols-sm-5 d-flex py-4">
+                <div><img src="./imgs/productLogo1.jpg" alt=""></div>
+                <div><img src="./imgs/productLogo2.jpg" alt=""></div>
+                <div><img src="./imgs/productLogo3.png" alt=""></div>
+                <div><img src="./imgs/productLogo4.jpg" alt=""></div>
+                <div><img src="./imgs/productLogo5.jpg" alt=""></div>
+                <div><img src="./imgs/productLogo6.jpg" alt=""></div>
+                <div><img src="./imgs/productLogo7.webp" alt=""></div>
+                <div><img src="./imgs/productLogo8.jpg" alt=""></div>
+                <div><img src="./imgs/productLogo9.webp" alt=""></div>
+                <div><img src="./imgs/productLogo10.webp" alt=""></div>
+            </div> 
+        </div>
+        </div>
+    </div>
+    </div>
+    <footer class="mobileFooter">
+        <div class="footerOutline">
+            <div class="d-flex justify-content-between  py-3 footerTitle">
+                <div>
+                    <span>會員制度</span>
+                </div>
+                <div>
+                    <span>✚</span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between  py-3 footerTitle" >
+                <div>
+                    <span>購物須知</span>
+                </div>
+                <div>
+                    <span>✚</span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between  py-3 footerTitle">
+                <div>
+                    <span>關於plain-me</span>
+                </div>
+                <div>
+                    <span>✚</span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between  py-3 footerTitle">
+                <div>
+                    <span>聯絡我們</span>
+                </div>
+                <div>
+                    <span>✚</span>
+                </div>
+            </div>
+            <div  class="d-flex justify-content-start  py-3 footerTitle">
+                    <div class="footerLock">
+                        <img src="./imgs/footer_lock.svg" alt="">
+                    </div>
+                    <div>
+                        <span>本站為GeoTrust 認證之安全網站</span>
+                    </div>
+            </div>
+        </div>
+            <div class="footerBtn">
+                <div class="m-auto footerLogo">
+                    <img src="./imgs/footer_logo.svg" alt="" >
+                </div>
+                <div class="d-flex footerIcon">
+                  <img src="./imgs/facebook.svg" alt="">
+                  <img src="./imgs/line.svg" alt="">
+                  <img src="./imgs/instagram.svg" alt="">
+                  <img src="./imgs/email.svg" alt="">
+                  <img src="./imgs/blog.webp" alt="">
+                </div>
+            </div>
+            <div class="text-center footerText">
+                <p>Ⓒplain-me 搭配美好的一天 - 服裝選貨店 select shop</p>
+                <p class="mt-3">樸然子股份有限公司 | 統一編號：28845661</p>
+                <p class="mt-3">常年法律顧問＿Xiri Attorneys-at-laws</p>
+                <br/>
+                <p>｜版權所有，轉載必究｜</p>
+                <p>RWD商城建置 <span>尚峪資訊科技</span></p>
+            </div>
+        </footer>
+        <footer class="desktopFooter">
+            <div class="desktopFooterBtn">
+                <div class="desktopFooterBtnOutline">
+                    <div class="m-auto footerLogo">
+                        <img src="./imgs/footer_logo.svg" alt="" >
+                    </div>
+                    <div class="d-flex footerIcon">
+                        <div class="me-3">
+                            <img src="./imgs/facebook.svg" alt="">
+                            <span>FACEBOOK</span>
+                        </div>
+                        <div class="me-3">
+                            <img src="./imgs/line.svg" alt="">
+                            <span>LINE</span>
+                        </div>
+                        <div class="me-3">
+                            <img src="./imgs/instagram.svg" alt="">
+                            <span>INSTAGRAM</span>
+                        </div>
+                        <div class="me-3">
+                            <img src="./imgs/email.svg" alt="">
+                            <span>訂閱電子報</span>
+                        </div>
+                        <div class="me-3">
+                            <img src="./imgs/blog.webp" alt="">
+                            <span>Blog</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerOutline">
+                <div class="footer-main">
+                    <div class="d-flex footerLink">
+                        <div><a href="">會員制度</a></div>
+                        <div><a href="">購物金說明</a></div>
+                        <div><a href="">常見問題</a></div>
+                        <div><a href="">退換貨服務</a></div>
+                        <div><a href="">OVERSEAS ORDERS</a></div>
+                        <div><a href="">購物須知</a></div>
+                    </div>
+                    <div class="d-flex footerLink">
+                        <div><a href="">關於plain-me</a></div>
+                        <div><a href="">媒體露出</a></div>
+                        <div><a href="">活動快訊</a></div>
+                        <div><a href="">防詐騙</a></div>
+                        <div><a href="">聯絡我們</a></div>
+                        <div><a href="">工作職缺</a></div>
+                    </div>
+                    <div  class="d-flex justify-content-start  py-3 footerTitle">
+                        <div class="footerLock">
+                            <img src="./imgs/footer_lock.svg" alt="">
+                        </div>
+                        <div>
+                            <span>本站為GeoTrust 認證之安全網站</span>
+                        </div>
+                    </div>
+                </div>   
+                <div class="text-start footerText">
+                    <p>Ⓒplain-me 搭配美好的一天 - 服裝選貨店 select shop</p>
+                    <p class="mt-3">樸然子股份有限公司 | 統一編號：28845661</p>
+                    <p class="mt-3">常年法律顧問＿Xiri Attorneys-at-laws</p>
+                    <br/>
+                    <p>｜版權所有，轉載必究｜</p>
+                    <p>RWD商城建置 <span>尚峪資訊科技</span></p>
+                </div>
+            </div>
+        </footer>
 <script>
         $('.multiple-items').slick({
             infinite: true,
@@ -474,12 +1070,6 @@
         })
         
 </script>
-
-
-        
-
-
-
 
 </body>
 </html>
