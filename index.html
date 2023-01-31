@@ -29,24 +29,21 @@
             margin: 0;
         }
         header{
-            height:108px   ;
+            /* height:120px   ; */
+            z-index: 999;
+            position: fixed;
+            top: 0;
         }
         .navbar{
             padding:10px ;
             color:#FFF;
-            width: 100%;
-           
+            width: 100%; 
             background-color:#c5bdae;
             display: flex;
             justify-content:center;
             align-content: center;
-            /* position: fixed; */
-            /* top: 0;    */
-            /* z-index: 10; */
         }
         .desktopNavbar{
-            /* position: fixed; */
-            /* top:0; */
             padding:0 20px ;
             color:#FFF;
             width: 100%;
@@ -54,8 +51,6 @@
             display: flex;
             height: 64px;
             align-content: center;
-            /* z-index: 10; */
-            /* justify-content: space-between; */
         }
         .mobileNavbaHridden{
             width: 100%;
@@ -67,11 +62,19 @@
             position: fixed;
             top:0   
         }
-        .manOutline{
-            
-            /* padding:20px 10px; */
-            background-color: #9B9388;
-            
+        .women-Main h5 , .man-Main h5{
+            font-weight: 700;
+            /* background-color: #9B9388; */
+        }
+        /* .sale{
+            background-color: #BE1249;
+        } */
+        .carousel{
+            margin-top: 135px;
+        }
+        .desktopNavbar{
+           
+            box-shadow: 0 3px 10px #000;
         }
         .desktopNavbar div{
             padding: 0 10px;
@@ -104,6 +107,15 @@
             padding: 5px 0;
             
         }
+        .navbarProduct{
+            background-color:#9b9288;
+            padding: 0 35px;
+        }
+        .navbarProduct a{
+            text-decoration: none;
+            color:white;
+        }
+        
         .logo{
             width: 100px;
         }
@@ -121,7 +133,7 @@
         }
         .toggleline{
             width: 50%;
-            border-bottom: 4px solid #000;   
+            border-bottom: 2px solid #000;   
         }
         .searchbar{
             flex-grow: 1;
@@ -178,7 +190,6 @@
         }
         .slick-prev{
             width:22px;
-            /* background-color:#f2f2f3; */
             border-radius: 50%;
             text-transform: none;
             position:absolute; 
@@ -308,7 +319,7 @@
 </head>
 <body>
     <header>
-        <div class="desktopNavbarHidden">
+      <div class="desktopNavbarHidden">
         <div class="d-flex container-fluid desktopNavbar  align-items-center">
                 <div class="desktopNavbarLogo">
                     <img src="./imgs/logo.webp" alt="">
@@ -355,6 +366,22 @@
                 </ul>
             </div>
         </div>
+        <div class="container-fluid navbarProduct">
+            <div class="d-flex align-items-center py-4 justify-content-between "> 
+                <div><a href="">所有商品</a></div>
+                <div><a href="">新品</a></div>
+                <div class="sale p-0"><a href="">SALE</a></div>
+                <div><a href="">年終必買</a></div>
+                <div><a href="">暢銷經典</a></div>
+                <div><a href="">最新企劃</a></div>
+                <div><a href="">服飾</a></div>
+                <div><a href="">包款</a></div>
+                <div><a href="">配件</a></div>
+                <div><a href="">鞋款</a></div>
+                <div><a href="">生活選物</a></div>
+                <div><a href="">品牌</a></div>
+            </div>
+        </div>
     </div>
         <div class="mobileNavbaHridden">
             <div class="mobileNavbar navbar container-fluid d-flex flex-nowrap">
@@ -384,13 +411,13 @@
                 </a>
         </div>
         <div class="navbar-down d-flex flex-wrap pb-4">
-            <div class="w-50 "><button class="w-100 py-4">男裝首頁</button></div>
-            <div class="w-50"><button class="w-100 py-4">女裝首頁</button></div>
+            <div class="w-50 "><button class="w-100 py-2">男裝首頁</button></div>
+            <div class="w-50"><button class="w-100 py-2">女裝首頁</button></div>
             <div class="toggleline "></div>
         </div>
     </div>
     </header>
-    <div id="carouselExampleIndicators" class="carousel slide w-100 mt-5" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide w-100 " data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
